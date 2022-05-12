@@ -1,0 +1,54 @@
+/* On windows/screens that are greater than or equal to 860px, do the following to the content labeled with the following classes: */
+@media screen and (min-width: 860px) {
+    .hide-on-mobile{
+        display: block;
+    }
+    .show-on-mobile{
+        display: none;
+    }
+    .show-side-margins-on-mobile{
+        margin-right: default;
+        margin-left: default;
+    }
+    .hide-side-margins-on-mobile{
+        margin-right: default;
+        margin-left: default;
+    }
+    .scale-header-gap-on-mobile{
+        top: 100px;
+    }
+    /* To adjust for moving to anchors when a page has a header, to account for the top navbar */
+    :target:before {
+    content:"";
+    display:block;
+    height:70px; /* fixed header height*/
+    margin:-70px 0 0; /* negative fixed header height */
+    }
+}
+/* On windows/screens that are less than or equal to 859px, do the following to the content labeled with the following classes: */
+@media screen and (max-width: 859px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .show-on-mobile{
+        display: block;
+    }
+    .show-side-margins-on-mobile{
+        margin-right: default;
+        margin-left: default;
+    }
+    .hide-side-margins-on-mobile{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .scale-header-gap-on-mobile{
+        top: 100px; /*7%;*/
+    }
+    /* To adjust for moving to anchors when a page has a header, to account for the top navbar */
+    :target:before {
+    content:"";
+    display:block;
+    height:85px; /* fixed header height*/
+    margin:-85px 0 0; /* negative fixed header height */
+    }
+}

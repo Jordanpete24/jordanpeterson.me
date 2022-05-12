@@ -1,0 +1,92 @@
+/* Implement this stylesheet and the contentSidebar.js script into pages that you want to have 
+a horizontal side display to help navigate the page's major categories. The styling of the sidebar 
+will be shared between all implementations, and can be adjusted in this file. The contentSidebar.js 
+script is responsible for dynamically generating the sidebar at runtime based on the usage of <h1> 
+categories that are given a specific class (it can be variable/custom per file for styling purposes). 
+All instances of the class must be gathered and provided to the contentSidebar.js script for processing. 
+Additionally, the sidebar can feature category headers, which are accomplished with an additional 'hidden'
+tag on the category <h1> element.*/
+
+/* The sidebar menu */
+.contentNavBar  {
+  /*width: 200px;  Set the width of the sidebar */
+  margin-left: 2%; /* The margins are arranged such that this content sidebar should remain entirely within 17% of the left side of the screen */
+  margin-right: 77%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0; /* Stays on the main level of the page, below top navbar dropdown menus, but in front of background. WAS: 1 */
+  top: 10%; /* The element will not be displayed above the top 15% of the page.*/
+  bottom: 5%; /* The element will not be displayed below the bottom 5% of the page.*/
+  background-color: #transparent;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.contentNavBar a   {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* The navigation menu category headers (from hidden contentSubtitle's) */
+.contentNavBar a strong   {
+  padding: 10px 10px 5px -10px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.contentNavBar a:hover {
+  color: black;
+}
+
+.contentNavBar a strong:hover {
+  color: #818181;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/*
+@media screen and (min-width: 801px) {
+  .contentNavBar {display: block;}
+}
+@media screen and (max-width: 800px) {
+  .contentNavBar {display: none;}
+}
+*/
+
+
+/* Bootstrap Modal content navbar overrides */
+/* The sidebar menu */
+.contentNavBar .modal-body {
+  /*width: 200px;  Set the width of the sidebar */
+  margin-left: 0%; /* The margins are arranged such that this content sidebar should remain entirely within 17% of the left side of the screen */
+  margin-right: 0%;
+  position: relative; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: inherit; /* Stays on the main level of the page, below top navbar dropdown menus, but in front of background. WAS: 1 */
+  top: 0; /* The element will not be displayed above the top 15% of the page.*/
+  bottom: 0; /* The element will not be displayed below the bottom 5% of the page.*/
+  background-color: inherit;
+  overflow-x: visible; /* Disable horizontal scroll */
+  padding-top: 0;
+}
+
+/* The navigation menu links */
+.contentNavBar a .modal-body  {
+  padding: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+  color: inherit;
+  display: inherit;
+}
+/* The navigation menu category headers (from hidden contentSubtitle's) */
+.contentNavBar a strong .modal-body  {
+  padding: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+  color: inherit;
+  display: inherit;
+}

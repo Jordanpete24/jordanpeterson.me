@@ -1,0 +1,334 @@
+/* General elements */
+/**
+ * RESET
+ * Reference: https://w3bits.com/wp-content/themes/w/labs.css, http://meyerweb.com/eric/tools/css/reset/
+ */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.618;
+  font-family: serif, Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+code, pre, samp {
+font-family: monospace;
+}
+
+/**
+ * BASIC TYPE
+ */
+
+img, video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+/**
+ * BOX HACKING
+ */
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * CLEAR FLOATS
+ * Reference: http://w3bits.com/clearfix
+ */
+
+.cf:after,
+.lab-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
+ * CONTENT WRAPPER
+ */
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  max-width: 90%; /* Previously: 1080px */
+}
+
+/* CUSTOM */
+body {
+	background-color: white; /* Previously: white, #ddd*/
+}
+
+h1.subtitle{
+	color: black;
+	font-size: 300%; 
+	text-align: center;
+}
+
+h3{
+	color: black;
+}
+
+h1.contentSubtitle{
+    color: grey;
+    font-size: 150%; 
+    text-align: center;
+}
+
+.normal {
+	text-align: left;
+    font-family: serif, Arial, Helvetica, sans-serif;
+	position: relative;	
+    top: 100px;
+    margin-right: 25%;
+	margin-left: 25%;
+	margin-top: 30px;
+	color: black;
+	font-size: 20px;
+}
+
+.footer p {
+	margin-top: 300px; 
+	text-align: center;
+	font-size: 17px;
+	color: black;
+	padding-bottom: 30px;
+}
+
+a.boxlink {
+	display: block;
+	height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.title {
+	overflow: visible;
+    background-color: #333;
+    font-family: serif, Arial, Helvetica, sans-serif;
+    opacity: 1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    top: 0%;
+    bottom: 89%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 0;
+}
+
+#title_name {
+	text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: auto;
+    position: fixed;
+    
+}
+
+#title_name a {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar {
+    overflow: visible;
+    background-color: #333;
+    font-family: serif, Arial, Helvetica, sans-serif;
+    opacity: 1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    top: 7%;
+    bottom: 87%;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn, 
+.dropdown .dropbtnpadded{
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, 
+.dropdown:hover .dropbtnpadded {
+    background-color: red;
+    opacity: 1;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+table.photogallery {
+	text-align: center;
+}
+
+img.galleryimage {
+	width:200px;
+	height:200px;
+}
+
+img.thumbnail {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center; 
+    width: auto; 
+    height: 200px; 
+    padding-right: 10px; 
+    padding-bottom: 10px;
+}
+
+div.navBottom {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  	padding: 0px;
+  	left: 0
+	}
+
+div.navBottom a {
+    font-family: serif;
+    float: center;
+    display: block;
+    color: silver; 
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+#contactform table {
+
+}
+
+#contactform tr {
+	text-align: left;
+	width: 200px;
+	text-align: top;
+	padding: 10px;
+}
+
+#contractform textarea {
+	  height: auto;
+	  resize:vertical;
+}
+
+.box {
+	font-family: serif;
+}
+
+

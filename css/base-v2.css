@@ -1,0 +1,111 @@
+.carousel-inner img {
+  margin: auto;
+}
+.navbar .navbar-nav .nav-link {
+  color: darkgray;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+  color:  red;
+}
+.navbar .dropdown-item:hover {
+  background-color: red;
+  color:  white;
+}
+.sm-icons {
+    flex-direction: row;
+}
+@media only screen and (max-width: 960px) {
+  .sm-icons .nav-item {
+    padding-right: 1em;
+  }
+}
+.navbar-brand {
+  width:150px;
+  font-size: 24px;
+}
+.navbar-brand img {
+  height: 50px;  /* put value of image height as your need */
+  float: left;
+  margin-right: 7px;
+}
+
+body {
+  background-color: white; /* Previously: white, #ddd*/
+}
+h1.subtitle{
+  color: black;
+  font-size: 300%; 
+  text-align: center;
+}
+.normal {
+  text-align: left;
+  font-family: serif, Arial, Helvetica, sans-serif;
+  position: relative; 
+  top: 100px;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 30px;
+  color: black;
+  font-size: 20px;
+}
+img :not(.ignore-css), video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+h3{
+  color: black;
+}
+
+h1.contentSubtitle{
+  color: grey;
+  font-size: 150%; 
+  text-align: center;
+}
+.footer p {
+  margin-top: 300px; 
+  text-align: center;
+  font-size: 17px;
+  color: black;
+  padding-bottom: 30px;
+}
+
+/* Table rows alternating color  */
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: #fdfdfd;}
+
+/* Padding and alignment for the first column of a table */
+td:first-child {
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* The light-bold class can be added to a strong element to adjust the color of the bolded text from the default of black to a slightly lighter dark grey. */ 
+strong.light-bold {
+  color: #585858;
+}
+
+/* Adjusts the default Bootstrap Accordian/Cards (Collapse functionality) such that the text in the card header is not blue (instead dark grey) and is aligned to the left. */
+.card-header {    
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.card button.btn.btn-link {
+  text-align: left;
+  color: #303030  ;
+}
+/*Disabled Card headers should lose their click function, but should have a specific color. */
+.card button.btn.btn-link.disabled {
+  color: black;
+}
+
+/* Making carousel buttons have dark backgrounds */
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
