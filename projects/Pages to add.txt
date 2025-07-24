@@ -1,0 +1,17 @@
+TYPES OF CONTENT:
+Projects will be a blog hub. Categories: Video Games, Toolkits, Board Games.
+
+PAGES:
+> Tower of Babel
+> Still We Sit
+> Castle Siege
+> Penumbra
+
+Maybe Include:
+> Labyrinth Devkit + Demo Game
+> Slime Time Devkit + Demo Game
+> ToB-divergent Game
+
+Remove?:
+> Castle Siege
+> Penumbra
