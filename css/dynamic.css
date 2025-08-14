@@ -1,3 +1,27 @@
+/* On windows/screens that are less than or equal to 799px, do the following to the content labeled with the following classes: */
+@media screen and (max-width: 699px){
+    .normal-wide-borderless-700px{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .normal-borderless-700px{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+/* On windows/screens that are greater than or equal to 800px, do the following to the content labeled with the following classes: */
+@media screen and (min-width: 700px){
+    .normal-wide-borderless-700px{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .normal-borderless-700px{
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    
+}
+
 /* On windows/screens that are greater than or equal to 860px, do the following to the content labeled with the following classes: */
 @media screen and (min-width: 860px) {
     .hide-on-mobile{
